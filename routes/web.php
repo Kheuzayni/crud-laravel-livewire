@@ -1,6 +1,7 @@
 <?php
 
-use App\Livewire\CartList;
+use App\Livewire\AddCar;
+use App\Livewire\CarList;
 use App\Livewire\TestPage;
 use Illuminate\Support\Facades\Route;
 
@@ -9,4 +10,5 @@ Route::get('/', function () {
 });
 
 Route::get('/test/Page', TestPage::class);
-Route::get('/Cars', CartList::class);
+Route::get('/Cars', CarList::class);
+Route::get('/add/new', AddCar::class);
