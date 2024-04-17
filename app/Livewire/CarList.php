@@ -4,10 +4,10 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class CartList extends Component
+class CarList extends Component
 {
     public function render()
     {
-        return view('livewire.cart-list');
+        return view('livewire.car-list');
     }
 }

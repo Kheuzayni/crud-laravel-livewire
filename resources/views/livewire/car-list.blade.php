@@ -6,7 +6,7 @@
                     <h2>CRUD Laravel & livewire</h2> 
                 </div>
                 <div class="col">
-                    <a href= "" class= "btn btn-success btn-sm float-end">Add new</a>
+                    <a href= "/add/new" wire:navigate class= "btn btn-success btn-sm float-end">Add new</a>
                 </div>
             </div>
         </div>
