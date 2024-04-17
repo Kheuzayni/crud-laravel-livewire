@@ -29,7 +29,7 @@ class AddCar extends Component
             $new_car->fuel_type = $this->fuel_type;
             $new_car->save();
 
-            return $this->redirect('/cars',navigate:true); 
+            return $this->redirect('/Cars',navigate:true); 
             // add the last parameter it's important for not reloading the whole page..
             // and give us the way to achieve the SPA..
         } catch (\Exception $e) {
