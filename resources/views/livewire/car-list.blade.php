@@ -11,6 +11,28 @@
             </div>
         </div>
         <div class="card-body">
+        <table class="table table-striped">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">Car Name</th>
+            <th scope="col">Brand name</th>
+            <th scope="col">Engine Capacity</th>
+            <th scope="col">Fuel Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ($cars as $item)
+                <tr>
+                    <td scope="row">{{$loop -> iteration }}</td>
+                    <td>{{$item -> car_name }}</td>
+                    <td>{{$item -> brand }}</td>
+                    <td>{{$item -> engine_capacity }}</td>
+                    <td>{{$item -> fuel_type }}</td>
+                </tr>
+            @endforeach
+        </tbody>
+        </table>
         </div>
     </div>
     
