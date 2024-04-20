@@ -30,13 +30,10 @@
                     <td>{{$item -> brand }}</td>
                     <td>{{$item -> engine_capacity }}</td>
                     <td>{{$item -> fuel_type }}</td>
-                    <!-- Edit -->
                     <td>
                         <a href="/edit/car/{{$item->id}}" wire:navigate class="btn btn-primary btn-sm">edit</a>
-                    </td>
-                    <!-- Delete -->
-                    <td>
-                        <button class="btn btn-danger btn-sm" wire:click="delete({{$item->id}})" wire:confirm="Are you sure you want to delete this?">Delete</button>
+                    
+                        <button class="btn btn-danger btn-sm" wire:click="delete({{$item->id}})" wire:confirm="Are you sure you want to delete this?">Del</button>
                     </td>
                     <td>
                         <div class="spinner-grow" role="status" wire:loading wire:target="delete({{ $item->id }})">
